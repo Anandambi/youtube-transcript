@@ -32,7 +32,7 @@ function App() {
           method: 'GET',
           headers: {
             'Accept': 'application/json',
-            'Origin': 'https://youtube-transcript-omega-lyart.vercel.app',
+            'Origin': 'https://youtube-transcript-mxipm4vex.vercel.app',
             'Access-Control-Allow-Origin': '*'
           }
         }
