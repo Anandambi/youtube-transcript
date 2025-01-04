@@ -26,7 +26,15 @@ function App() {
       }
 
       const response = await fetch(
-        `https://www.searchapi.io/api/v1/youtube/transcript?video_id=${videoId}&api_key=${import.meta.env.VITE_SEARCH_API_KEY}`
+        `https://www.searchapi.io/api/v1/youtube/transcript?video_id=${videoId}&api_key=${import.meta.env.VITE_SEARCH_API_KEY}`,
+        {
+          method: 'GET',
+          headers: {
+            'Accept': 'application/json',
+            'Origin': 'https://youtube-transcript-omega-lyart.vercel.app',
+            'Access-Control-Allow-Origin': '*'
+          }
+        }
       );
 
       if (!response.ok) {
