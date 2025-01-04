@@ -69,7 +69,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>YouTube Transcript Fetcher</h1>
+      <h1>YouTube New Video Transcript</h1>
       <div className="input-section">
         <input
           type="text"
